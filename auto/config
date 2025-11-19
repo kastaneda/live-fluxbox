@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+	--distribution stable \
+	--apt-recommends false \
+	--apt-indices false \
+	"${@}"
