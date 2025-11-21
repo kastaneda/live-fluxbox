@@ -9,3 +9,5 @@ xdotool
 xosd-bin
 dunst
 libnotify-bin
+fonts-terminus-otb
+xfonts-terminus
