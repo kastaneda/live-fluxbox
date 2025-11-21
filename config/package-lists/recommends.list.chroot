@@ -1,4 +1,7 @@
 live-tools
 user-setup
 sudo
-eject
+net-tools
+isc-dhcp-client
+iputils-ping
+iwd

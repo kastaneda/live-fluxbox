@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 xrdb -load ~/.Xdefaults
 xset r rate 195 55
 xset s off -dpms
