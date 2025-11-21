@@ -1,0 +1,14 @@
+
+Setup WiFi:
+
+    systemctl start iwd
+    iwctl
+        device list
+        station wlXXX connect SSID
+
+Setup wired connection:
+
+    ifconfig -a
+    ifconfig enp0s3 up
+    udhcpc -i enp0s3
+
