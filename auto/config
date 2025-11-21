@@ -3,7 +3,8 @@
 set -e
 
 lb config noauto \
-	--distribution stable \
 	--apt-recommends false \
 	--apt-indices false \
+	--debootstrap-options "--variant=minbase" \
+	--memtest none \
 	"${@}"
