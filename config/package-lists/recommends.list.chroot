@@ -1,7 +1,4 @@
 live-tools
 user-setup
 sudo
-net-tools
-isc-dhcp-client
-iputils-ping
 iwd
