@@ -1,0 +1,10 @@
+#!/bin/sh
+busybox --install -s /usr/local/bin
+
+for c in $(ls /usr/local/bin)
+do
+  [ -f /bin/$c -o \
+    -f /sbin/$c -o \
+    -f /usr/bin/$c -o \
+    -f /usr/sbin/$c ] && rm /usr/local/bin/$c
+done
