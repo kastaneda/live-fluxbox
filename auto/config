@@ -3,9 +3,11 @@
 set -e
 
 lb config noauto \
-	--bootappend-live "boot=live components live-config.locales=uk_UA.UTF-8 live-config.timezone=Europe/Kyiv"
+	--bootappend-live "boot=live components live-config.locales=uk_UA.UTF-8 live-config.timezone=Europe/Kyiv" \
+	--archive-areas "main non-free-firmware" \
 	--apt-recommends false \
 	--apt-indices false \
+	--firmware-chroot false \
 	--debootstrap-options "--variant=minbase" \
 	--memtest none \
 	"${@}"

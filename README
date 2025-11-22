@@ -1,2 +1,4 @@
 sudo apt install live-build
 sudo lb clean --all; lb config; time sudo lb build; notify-send "Done"
+
+TODO: firmware-iwlwifi iwd iwgtk
