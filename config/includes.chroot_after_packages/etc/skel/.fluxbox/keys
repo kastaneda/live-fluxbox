@@ -58,11 +58,11 @@ Mod4 O                      :ExecCommand xclip -o | xargs xdg-open
 # Mod1 Control L            :ExecCommand xscreensaver-command -lock
 # Mod4 L                    :ExecCommand xscreensaver-command -lock
 
-# XF86AudioLowerVolume      :ExecCommand amixer -q sset Master 5%-
-# XF86AudioRaiseVolume      :ExecCommand amixer -q sset Master 5%+
-# Mod4 comma                :ExecCommand amixer -q sset Master 5%-
-# Mod4 period               :ExecCommand amixer -q sset Master 5%+
-# XF86AudioMute             :ExecCommand amixer -q sset Master toggle
+XF86AudioLowerVolume        :ExecCommand amixer -q sset Master 5%-
+XF86AudioRaiseVolume        :ExecCommand amixer -q sset Master 5%+
+Mod4 comma                  :ExecCommand amixer -q sset Master 5%-
+Mod4 period                 :ExecCommand amixer -q sset Master 5%+
+XF86AudioMute               :ExecCommand amixer -q sset Master toggle
 
 XF86MonBrightnessDown       :ExecCommand brightnessctl set 1%-
 XF86MonBrightnessUp         :ExecCommand brightnessctl set 1%+
@@ -72,6 +72,6 @@ Mod4 F6                     :ExecCommand brightnessctl set 1%+
 # Mod4 F                    :ExecCommand firefox
 # Mod4 G                    :ExecCommand chromium
 # Mod4 S                    :ExecCommand netsurf-gtk
-# Mod4 D                    :ExecCommand dillo
-# Mod4 K                    :ExecCommand urxvt -geometry 120x32 -e mc
+Mod4 D                      :ExecCommand dillo
+Mod4 K                      :ExecCommand urxvt -geometry 120x32 -e mc
 # Mod4 P                    :ExecCommand keepassxc

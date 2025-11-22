@@ -4,7 +4,8 @@
 
     # [exec] (Firefox) { firefox }
     # [exec] (Chromium) { chromium }
-    # [nop] ()
+    [exec] (Dillo) { dillo }
+    [nop] ()
 
     [include] (/etc/X11/fluxbox/fluxbox-menu)
     [nop] ()
