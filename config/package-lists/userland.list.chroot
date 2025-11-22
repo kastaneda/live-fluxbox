@@ -10,3 +10,5 @@ git
 mc
 elinks
 alsa-utils
+locales
+ca-certificates
