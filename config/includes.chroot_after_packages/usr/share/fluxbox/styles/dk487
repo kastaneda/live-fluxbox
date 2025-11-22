@@ -1,0 +1,26 @@
+rootCommand:                            fbsetroot -solid black
+*font:                                  -*-terminus-medium-r-*-*-20-*-*-*-*-*-iso10646-*
+menu*font:                              -*-terminus-medium-r-*-*-28-*-*-*-*-*-iso10646-*
+*justify:                               left
+
+*color:                                 black
+*textColor:                             rgb:9f/ff/9f
+*.focus.textColor:                      white
+*.focus.color:                          rgb:2f/3f/2f
+*borderColor:                           rgb:5f/7f/5f
+*borderWidth:                           1
+
+window.*.borderColor:                   rgb:3f/3f/3f
+window.focus.borderColor:               rgb:9f/ff/9f
+
+menu.*.textColor:                       rgb:6f/7f/6f
+menu.hilite.textColor:                  white
+menu.hilite.color:                      rgb:2f/37/2f
+menu.title.justify:                     center
+
+toolbar.*.color:                        rgb:2f/37/2f
+toolbar.*.borderWidth:                  0
+toolbar.iconbar.*.textColor:            rgb:5f/5f/5f
+toolbar.iconbar.focused.textColor:      rgb:9f/ff/9f
+toolbar.clock.justify:                  right
+toolbar.workspace.justify:              center

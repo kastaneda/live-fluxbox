@@ -5,7 +5,7 @@ then
   . ~/.profile
 fi
 
-xrdb -load ~/.Xdefaults
+xrdb -load ~/.config/Xdefaults
 xset r rate 195 55
 xset s off -dpms
 xset b off

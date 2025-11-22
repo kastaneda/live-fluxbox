@@ -1,0 +1,3 @@
+[app] (name=.*)
+    [Deco] {BORDER}
+[end]

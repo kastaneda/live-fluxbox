@@ -1,0 +1,77 @@
+Mod1 F1                     :RootMenu
+
+Mod1 F2                     :ExecCommand urxvt
+Mod1 Control T              :ExecCommand urxvt
+
+Mod1 F4                     :Close
+Mod4 Delete                 :KillWindow
+
+Mod1 F10                    :MaximizeWindow
+Mod4 Prior                  :MaximizeWindow
+Mod4 Next                   :MinimizeWindow
+Mod1 Tab                    :NextWindow (workspace=[current])
+
+Mod1 F11                    :Fullscreen
+
+Mod1 Control Left           :PrevWorkspace
+Mod1 Control Right          :NextWorkspace
+OnDesktop Mouse5            :NextWorkspace
+OnDesktop Mouse4            :PrevWorkspace
+OnToolbar Mouse5            :NextWorkspace
+OnToolbar Mouse4            :PrevWorkspace
+Mod4 Mouse5                 :NextWorkspace
+Mod4 Mouse4                 :PrevWorkspace
+
+Mod4 grave                  :Workspace 1
+Mod4 1                      :Workspace 2
+Mod4 2                      :Workspace 3
+Mod4 3                      :Workspace 4
+Mod4 4                      :Workspace 5
+Mod4 5                      :Workspace 6
+Mod4 6                      :Workspace 7
+
+Mod1 Control Shift Left     :TakeToPrevWorkspace
+Mod1 Control Shift Right    :TakeToNextWorkspace
+
+Mod4 Left                   :MoveLeft   20
+Mod4 Right                  :MoveRight  20
+Mod4 Up                     :MoveUp     20
+Mod4 Down                   :MoveDown   20
+OnWindow Mod1 Mouse1        :MacroCmd {Raise} {Focus} {StartMoving}
+OnWindowBorder Move1        :StartMoving
+OnTitlebar Move1            :StartMoving
+
+Shift Mod4 Left             :Resize     -1 0
+Shift Mod4 Right            :Resize     +1 0
+Shift Mod4 Up               :Resize     0 -1
+Shift Mod4 Down             :Resize     0 +1
+OnWindow Mod1 Mouse3        :MacroCmd {Raise} {Focus} {StartResizing BottomRight}
+
+Mod4 C                      :MoveTo     0 0 Center
+Mod4 KP_5                   :MoveTo     0 0 Center
+
+OnDesktop Mouse1            :HideMenus
+OnDesktop Mouse3            :RootMenu
+
+Mod4 O                      :ExecCommand xclip -o | xargs xdg-open
+
+# Mod1 Control L            :ExecCommand xscreensaver-command -lock
+# Mod4 L                    :ExecCommand xscreensaver-command -lock
+
+# XF86AudioLowerVolume      :ExecCommand amixer -q sset Master 5%-
+# XF86AudioRaiseVolume      :ExecCommand amixer -q sset Master 5%+
+# Mod4 comma                :ExecCommand amixer -q sset Master 5%-
+# Mod4 period               :ExecCommand amixer -q sset Master 5%+
+# XF86AudioMute             :ExecCommand amixer -q sset Master toggle
+
+XF86MonBrightnessDown       :ExecCommand brightnessctl set 1%-
+XF86MonBrightnessUp         :ExecCommand brightnessctl set 1%+
+Mod4 F5                     :ExecCommand brightnessctl set 1%-
+Mod4 F6                     :ExecCommand brightnessctl set 1%+
+
+# Mod4 F                    :ExecCommand firefox
+# Mod4 G                    :ExecCommand chromium
+# Mod4 S                    :ExecCommand netsurf-gtk
+# Mod4 D                    :ExecCommand dillo
+# Mod4 K                    :ExecCommand urxvt -geometry 120x32 -e mc
+# Mod4 P                    :ExecCommand keepassxc

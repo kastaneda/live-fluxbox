@@ -1,0 +1,7 @@
+session.screen0.toolbar.tools:	workspacename, iconbar, systemtray, clock
+session.screen0.toolbar.onhead:	1
+session.screen0.toolbar.placement:	TopRight
+session.screen0.strftimeFormat:	%Y-%m-%d %H:%M:%S
+session.screen0.workspaceNames:	0,1,2,3,4,5,6,7,8,9,
+session.screen0.workspaces:	6
+session.styleFile:	/usr/share/fluxbox/styles/dk487

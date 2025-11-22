@@ -1,0 +1,16 @@
+[begin] (fluxbox)
+    [exec] (Terminal) { urxvt }
+    [nop] ()
+
+    # [exec] (Firefox) { firefox }
+    # [exec] (Chromium) { chromium }
+    # [nop] ()
+
+    [include] (/etc/X11/fluxbox/fluxbox-menu)
+    [nop] ()
+
+    [submenu] (Shutdown...)
+        [exec] (Reboot) { sudo /sbin/shutdown -r now }
+        [exec] (Power off) { sudo /sbin/shutdown -h now }
+    [end]
+[end]
