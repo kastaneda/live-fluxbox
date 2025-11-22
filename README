@@ -1,4 +1,9 @@
+menuentry "Fluxbox" {
+    set isofile="/EFI/BOOT/live-image-amd64.hybrid.iso"
+    loopback loop $isofile
+    linux (loop)/live/vmlinuz boot=live components live-config.locales=uk_UA.UTF-8 live-config.timezone=Europe/Kyiv findiso=${isofile}
+    initrd (loop)/live/initrd.img
+}
+
 sudo apt install live-build
 sudo lb clean --all; lb config; time sudo lb build; notify-send "Done"
-
-TODO: firmware-iwlwifi iwd iwgtk
