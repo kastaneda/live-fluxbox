@@ -64,10 +64,10 @@ Mod4 comma                  :ExecCommand amixer -q sset Master 5%-
 Mod4 period                 :ExecCommand amixer -q sset Master 5%+
 XF86AudioMute               :ExecCommand amixer -q sset Master toggle
 
-XF86MonBrightnessDown       :ExecCommand brightnessctl set 1%-
-XF86MonBrightnessUp         :ExecCommand brightnessctl set 1%+
-Mod4 F5                     :ExecCommand brightnessctl set 1%-
-Mod4 F6                     :ExecCommand brightnessctl set 1%+
+XF86MonBrightnessDown       :ExecCommand sudo brightnessctl set 1%-
+XF86MonBrightnessUp         :ExecCommand sudo brightnessctl set 1%+
+Mod4 F5                     :ExecCommand sudo brightnessctl set 1%-
+Mod4 F6                     :ExecCommand sudo brightnessctl set 1%+
 
 # Mod4 F                    :ExecCommand firefox
 # Mod4 G                    :ExecCommand chromium
