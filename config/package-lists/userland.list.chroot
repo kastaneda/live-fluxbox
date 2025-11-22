@@ -2,4 +2,11 @@ vim
 less
 screen
 openssh-client
+openvpn
+fido2-tools
+fuse
+sshfs
 git
+mc
+elinks
+alsa-utils
